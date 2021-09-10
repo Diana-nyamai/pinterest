@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffff;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content:flex-end;
+    padding: 15px 20px;
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-right: auto;
+}
+.logo h3{
+    color: #e60023;
+    margin-left: 5px;
+    margin-top: 3px;
+    font-size: 20px;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+}
+
+header ul{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 15px 20px;
+}
+header li{
+    list-style-type: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    padding: 8px 12px;
+    font-weight: 700;
+    border-radius: 24px;
+}
+
+.login a{
+    background: #e60023;
+    /* border-radius: 20px; */
+    color: white;
+}
+.signup a{
+    background: #efefef;
+    /* border-radius: 20px; */
+    color: black;
+}
+
+/* bars styling */
+.icon{
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    padding: 8px 12px;
+    font-weight: 700;
+    border-radius: 24px;
+}
+
+@media all and (max-width: 767px){
+    .icon{
+        position: absolute;
+        float: right;
+    }
+       header ul{
+           justify-content: space-around;
+           
+       }
+       .icon{
+           display: block;
+       }
+}
+@media all and (max-width: 750px){
+    header ul{
+        flex-flow: column-reverse wrap;
+        margin-top: 50px;
+    }
+    .right-nav li{
+        padding: 15px;
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+    }
+}
