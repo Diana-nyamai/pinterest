@@ -7,91 +7,146 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background: #ffff;
 }
-header{
-    display: flex;
-    width: 100%;
-    justify-content:flex-end;
-    padding: 15px 20px;
-
+nav{
+    background: none;
+    padding: 5px 20px;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin-right: auto;
-}
-.logo h3{
+.text{
     color: #e60023;
-    margin-left: 5px;
-    margin-top: 3px;
     font-size: 20px;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    
 }
-
-header ul{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 15px 20px;
-}
-header li{
+ul{
     list-style-type: none;
-    margin-left: 20px;
 }
-header ul li a{
+a{
     text-decoration: none;
-    color: black;
+    color: #000;
+}
+a:hover{
+    text-decoration: underline;
+}
+.menu li{
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
-    padding: 8px 12px;
     font-weight: 700;
-    border-radius: 24px;
+    padding: 8px 12px;
+}
+.menu li a{
+    display: block;
+}
+.button.secondary{
+    border-bottom: 1px solid #efefef;
 }
 
-.login a{
-    background: #e60023;
-    /* border-radius: 20px; */
-    color: white;
+/* mobile menu */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
-.signup a{
-    background: #efefef;
-    /* border-radius: 20px; */
-    color: black;
+.toggle{
+    order: 1;
 }
-
-/* bars styling */
-.icon{
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
     display: none;
-    text-decoration: none;
-    color: black;
-    font-size: 26px;
-    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
-    padding: 8px 12px;
-    font-weight: 700;
-    border-radius: 24px;
+}
+.item.active{
+    display: block;
+}
+.toggle{
+   cursor: pointer;
+}
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+.bars::before,.bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
 }
 
-@media all and (max-width: 767px){
-    .icon{
-        position: absolute;
-        float: right;
+/* tablet menu */
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;
     }
-       header ul{
-           justify-content: space-around;
-           
-       }
-       .icon{
-           display: block;
-       }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        display: block;
+        order: 1;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        background-color: #e60023;
+        padding: 8px 12px;
+        border-radius: 24px;
+        color: #fff;
+    }
+    .button.secondary a{
+        background: #efefef;
+        color: #000;
+    }
+    .button a:hover{
+        transition: all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background: #ad081b;
+    }
+    .button.secondary a:hover{
+        background: #e2e2e2;
+    }
 }
-@media all and (max-width: 750px){
-    header ul{
-        flex-flow: column-reverse wrap;
-        margin-top: 50px;
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
     }
-    .right-nav li{
-        padding: 15px;
-        border-top: 1px solid #efefef;
-        border-bottom: 1px solid #efefef;
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
     }
 }
