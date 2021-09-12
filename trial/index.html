@@ -7,6 +7,7 @@
     <title>Pinterest</title>
     <link rel="shortcut icon" href="./pinterest-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
@@ -24,7 +25,40 @@
     </ul>
     </nav>
 
-    <main></main>
+    <!--content -->
+    <main>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+              <div class="maintext"><h1>Get your next</h1></div>
+              <div class="secondtext brown">weeknight dinner idea</div>             
+            </div>
+            
+            <div class="mySlides">
+              <div class="maintext"><h1>Get your next</h1></div>
+              <div class="secondtext dgreen">home décor idea</div>
+            </div>
+            
+            <div class="mySlides">
+              <div class="maintext"><h1>Get your next</h1></div>
+              <div class="secondtext blue">new outfit</div>
+            </div>
+            <div class="mySlides">
+                <div class="maintext"><h1>Get your next</h1></div>
+                <div class="secondtext green">green thumb idea</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot brown" onclick="currentSlide(1)"></span> 
+              <span class="dot dgreen" onclick="currentSlide(2)"></span> 
+              <span class="dot blue" onclick="currentSlide(3)"></span>
+              <span class="dot green" onclick="currentSlide(4)"></span> 
+            </div>
+            
+    </main>
     <script src="./index.js"></script>
 </body>
 </html>
