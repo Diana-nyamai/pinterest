@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 200%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 20px;
+}
+.slides input{
+    display: none;
+}

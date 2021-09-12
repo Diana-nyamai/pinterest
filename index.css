@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #ffff;
+    
 }
 nav{
     background: none;
@@ -13,9 +14,10 @@ nav{
 }
 .text{
     color: #e60023;
-    font-size: 20px;
+    font-size: 20px;  
     
 }
+.logo a:hover{text-decoration: none;}
 ul{
     list-style-type: none;
 }
