@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="./pinterest-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <nav>
@@ -27,38 +27,48 @@
 
     <!--content -->
     <main>
-        <div class="slideshow-container">
-
-            <div class="mySlides">
-              <div class="maintext"><h1>Get your next</h1></div>
-              <div class="secondtext brown">weeknight dinner idea</div>             
-            </div>
-            
-            <div class="mySlides">
-              <div class="maintext"><h1>Get your next</h1></div>
-              <div class="secondtext dgreen">home décor idea</div>
-            </div>
-            
-            <div class="mySlides">
-              <div class="maintext"><h1>Get your next</h1></div>
-              <div class="secondtext blue">new outfit</div>
-            </div>
-            <div class="mySlides">
-                <div class="maintext"><h1>Get your next</h1></div>
-                <div class="secondtext green">green thumb idea</div>
-            </div>
-            
-            </div>
+      <div><h1 class="maintext">Get your next</h1></div>
+        
+      <!-- carousel -->
+      <div id="animated-text">
+          <div class="lines brown"> weeknight dinner idea</div>
+          <div class="lines dgreen">home décor idea</div>
+          <div class="lines blue"> new outfit</div>
+          <div class="lines green">green thumb idea</div>
+      </div>
             <br>
             
             <div style="text-align:center">
-              <span class="dot brown" onclick="currentSlide(1)"></span> 
-              <span class="dot dgreen" onclick="currentSlide(2)"></span> 
-              <span class="dot blue" onclick="currentSlide(3)"></span>
-              <span class="dot green" onclick="currentSlide(4)"></span> 
+              <span class="dot brown" "></span> 
+              <span class="dot dgreen" "></span> 
+              <span class="dot blue" "></span>
+              <span class="dot green" "></span> 
             </div>
-            
+
+            <!-- cards -->
+    <div class="wrapper">
+        <div class="card image1">
+          <img src="./image1.jpg" width="200" height="300" alt="">
+        </div>
+        <div class="card">
+          <img src="./image2.jpg" width="200" height="300" alt="">
+        </div>
+        <div class="card">
+          <img src="./image1.jpg" width="200" height="300" alt="">
+        </div>
+        <div class="card">
+          <img src="./image1.jpg" width="200" height="300" alt="">
+        </div>
+        <div class="card">
+          <img src="./image1.jpg" width="200" height="300" alt="">
+        </div>
+        <div class="card">
+          <img src="./image1.jpg" width="200" height="300" alt="">
+        </div>
+        
+
+    </div>
     </main>
-    <script src="./index.js"></script>
+  
 </body>
 </html>
