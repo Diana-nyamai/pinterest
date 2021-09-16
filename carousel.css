@@ -1,0 +1,161 @@
+.slider{
+  width:auto;
+  height:100px;
+  margin:0 auto;
+  overflow:hidden;
+}
+.slides{
+  width:400%;
+   height:100%;
+   -webkit-animation:slide 16s infinite;
+   -moz-animation:slide 16s infinite;
+   animation:slide 16s infinite;
+}
+.slider-1, .slider-2, .slider-3, .slider-4{
+  width:25%;
+  height:100%;
+  float:left;
+  background: transparent;
+}
+@-webkit-keyframes slide{
+  0%,100% {
+      margin-left:0%;
+  }
+
+  12% {
+      margin-left:0%;
+  }
+
+  24% {
+      margin-left:-100%;
+  }
+
+  36% {
+      margin-left:-100%;
+  }
+
+  48% {
+      margin-left:-200%;
+  }
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
+  }
+}
+@-moz-keyframes slide{
+  0%,100% {
+      margin-left:0%;
+  }
+
+  12% {
+      margin-left:0%;
+  }
+
+  24% {
+      margin-left:-100%;
+  }
+
+  36% {
+      margin-left:-100%;
+  }
+
+  48% {
+      margin-left:-200%;
+  }
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
+  }
+}
+@keyframes slide{
+  0%,100% {
+      margin-left:0%;
+  }
+
+  12% {
+      margin-left:0%;
+  }
+
+  24% {
+      margin-left:-100%;
+  }
+
+  36% {
+      margin-left:-100%;
+  }
+
+  48% {
+      margin-left:-200%;
+  }
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
+  }
+}
+
+
+/* Main text */
+.maintext {
+  color: #000;
+  font-size: 60px;
+  font-weight: 600;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  
+}
+.brown{
+  color: #c28b00;
+}
+.dgreen{
+  color: #618c7b;
+}
+.blue{
+  color: #4a8ad4;
+}
+.green{
+  color: #407a57;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .maintext {font-size: 11px}
+}
