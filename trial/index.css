@@ -6,6 +6,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #ffff;
+    overflow-x: hidden;
    
 }
 nav{
@@ -17,6 +18,7 @@ nav{
     font-size: 20px;
     
 }
+.logo a:hover{text-decoration: none;}
 ul{
     list-style-type: none;
 }
@@ -163,7 +165,7 @@ a:hover{
   }
   .pin_container{
     margin: 0;
-    padding: 0;
+    padding: 100px 0;
     width: 100vw;
     position: absolute;
     left: 50%;
@@ -179,6 +181,8 @@ a:hover{
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
     background-color:white;
+    animation: fadeOutUp ;
+    animation-duration: 5s ;
   }
   .card img{
     border-radius: var(--card_border_radius);
