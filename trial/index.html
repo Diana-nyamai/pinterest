@@ -10,6 +10,45 @@
     <link rel="stylesheet" href="./carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       :root{
+         --card_width: 250px;
+         --card_border_radius: 16px;
+         --row_increament: 10px;
+         --card_small: 26;
+         --card_medium: 33;
+         --card_large: 45;
+       }
+       .pin_container{
+         margin: 0;
+         padding: 0;
+         width: 80vw;
+         position: absolute;
+         left: 50%;
+         transform: translate(-50%);
+         display: grid;
+         grid-template-columns: repeat(auto-fill, var(--card_width));
+         grid-auto-rows: var(--row_increament);
+         justify-content: center;
+         background-color: black;
+       }
+       .card{
+         padding: 0;
+         margin: 15px 10px;
+         border-radius: var(--card_border_radius);
+         background-color:white;
+       }
+       .card_small{
+         grid-row-end: span var(--card_small);
+       }
+       .card_medium{
+         grid-row-end: span var(--card_medium);
+       }
+       .card_large{
+         grid-row-end: span var(--card_large);
+       }
+    </style>
 </head>
 <body>
     <nav>
@@ -31,40 +70,37 @@
         
       <!-- carousel -->
       <div id="animated-text">
-          <div class="lines brown"> weeknight dinner idea</div>
-          <div class="lines dgreen">home décor idea</div>
-          <div class="lines blue"> new outfit</div>
-          <div class="lines green">green thumb idea</div>
+          <div class="line brown"> weeknight dinner idea</div>
+          <div class="line dgreen">home décor idea</div>
+          <div class="line blue"> new outfit</div>
+          <div class="line green">green thumb idea</div>
       </div>
             <br>
             
             <div style="text-align:center">
-              <span class="dot brown" "></span> 
-              <span class="dot dgreen" "></span> 
-              <span class="dot blue" "></span>
-              <span class="dot green" "></span> 
+              <span class="dot brown" ></span> 
+              <span class="dot dgreen" ></span> 
+              <span class="dot blue" ></span>
+              <span class="dot green" ></span> 
             </div>
 
             <!-- cards -->
-    <div class="wrapper">
-        <div class="card image1">
-          <img src="./image1.jpg" width="200" height="300" alt="">
-        </div>
-        <div class="card">
-          <img src="./image2.jpg" width="200" height="300" alt="">
-        </div>
-        <div class="card">
-          <img src="./image1.jpg" width="200" height="300" alt="">
-        </div>
-        <div class="card">
-          <img src="./image1.jpg" width="200" height="300" alt="">
-        </div>
-        <div class="card">
-          <img src="./image1.jpg" width="200" height="300" alt="">
-        </div>
-        <div class="card">
-          <img src="./image1.jpg" width="200" height="300" alt="">
-        </div>
+    <div class="pin_container">
+      <div class="card card_large"><img src="./image1.jpg" width="230" height="420" alt=""></div>
+      <div class="card card_medium"><img src="./image2.jpg" width="230" height="260" alt=""></div>
+      <div class="card card_small"><img src="./image1.jpg" width="230" height="230" alt=""></div>
+      <div class="card card_large"><img src="./image1.jpg" width="230" height="420" alt=""></div>
+      <div class="card card_medium"><img src="./image2.jpg" width="230" height="260" alt=""></div>
+      <div class="card card_small"><img src="./image1.jpg" width="230" height="230" alt=""></div>
+      <div class="card card_large"><img src="./image1.jpg" width="230" height="420" alt=""></div>
+      <div class="card card_medium"><img src="./image2.jpg" width="230" height="260" alt=""></div>
+      <div class="card card_small"><img src="./image1.jpg" width="230" height="230" alt=""></div>
+      <div class="card card_large"><img src="./image1.jpg" width="230" height="420" alt=""></div>
+      <div class="card card_medium"><img src="./image2.jpg" width="230" height="260" alt=""></div>
+      <div class="card card_small"><img src="./image1.jpg" width="230" height="230" alt=""></div>
+            
+            
+    </div>
         
 
     </div>
