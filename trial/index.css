@@ -181,7 +181,7 @@ a:hover{
     margin: 15px 10px;
     border-radius: var(--card_border_radius);
     background-color:white;
-    animation: fadeOutUp ;
+    animation: fadeOutUp infinite;
     animation-duration: 5s ;
   }
   .card img{

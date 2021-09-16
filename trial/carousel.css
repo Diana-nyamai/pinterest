@@ -1,44 +1,122 @@
-#animated-text{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 30px 40px;
-  height: 120px;
-  overflow: hidden;
-  text-align: center;
-  font-size: 50px;
-}
-.line{
- padding: 20px 0;
- line-height: 60px;
- font-size: 60px;
- font-weight: 600;
- text-align: center;
-}
-.line::first-line{
+.slider{
+  width:auto;
+  height:100px;
+  margin:0 auto;
   
-  animation:anim 12s infinite;
-  
+  overflow:hidden;
 }
-@keyframes anim{
-  0%{
-    margin-top: -150px;
+.slides{
+  width:400%;
+   height:100%;
+   -webkit-animation:slide 16s infinite;
+   -moz-animation:slide 16s infinite;
+   animation:slide 16s infinite;
+}
+.slider-1, .slider-2, .slider-3, .slider-4{
+  width:25%;
+  height:100%;
+  float:left;
+  background: transparent;
+}
+
+
+@-webkit-keyframes slide{
+  0%,100% {
+      margin-left:0%;
   }
-  5%{
-    margin-top: -200px;
+
+  12% {
+      margin-left:0%;
   }
-  33%{
-    margin-top: -200px;
+
+  24% {
+      margin-left:-100%;
   }
-  38%{
-    margin-top: -200px;
+
+  36% {
+      margin-left:-100%;
   }
-  66%{
-    margin-top: -100px;
+
+  48% {
+      margin-left:-200%;
   }
-  100%{
-    margin-top: 0;
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
+  }
+}
+@-moz-keyframes slide{
+  0%,100% {
+      margin-left:0%;
+  }
+
+  12% {
+      margin-left:0%;
+  }
+
+  24% {
+      margin-left:-100%;
+  }
+
+  36% {
+      margin-left:-100%;
+  }
+
+  48% {
+      margin-left:-200%;
+  }
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
+  }
+}
+@keyframes slide{
+  0%,100% {
+      margin-left:0%;
+  }
+
+  12% {
+      margin-left:0%;
+  }
+
+  24% {
+      margin-left:-100%;
+  }
+
+  36% {
+      margin-left:-100%;
+  }
+
+  48% {
+      margin-left:-200%;
+  }
+
+  60% {
+      margin-left:-200%;
+  }
+
+  72% {
+      margin-left:-300%;
+  }
+
+  84% {
+      margin-left:-300%;  
   }
 }
 
@@ -54,18 +132,6 @@
   text-align: center;
   
 }
-
-/* second text*/
-/* .second {
-  animation: fadeOutUp;
-  animation-duration: 2s;
-  color: #000;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 8px 12px;
-  text-align: center;
-  justify-items: center;
-} */
 .brown{
   color: #c28b00;
 }
@@ -73,7 +139,7 @@
   color: #618c7b;
 }
 .blue{
-  color: #618c7b;
+  color: #4a8ad4;
 }
 .green{
   color: #407a57;
@@ -84,15 +150,11 @@
 .dot {
   height: 10px;
   width: 10px;
-  margin: 0 2px;
+  margin: 0px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
-}
-
-.dota{
-  background-color: #9b1919;
 }
 
 
